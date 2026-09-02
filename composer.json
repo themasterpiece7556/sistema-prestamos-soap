@@ -1,0 +1,14 @@
+{
+    "name": "app/sistema-prestamos-soap",
+    "description": "Sistema de préstamos de equipos tecnológicos usando PHP y NuSOAP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Config\\": "config/"
+        }
+    },
+    "require": {
+        "econea/nusoap": "^0.9.11"
+    }
+}
