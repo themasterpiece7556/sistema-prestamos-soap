@@ -1,0 +1,5 @@
+{
+  "name": "estudiante/prestamo-equipos",
+  "description": "Sistema SOAP de prestamo de equipos",
+  "require": {"econea/nusoap": "*"}
+}
