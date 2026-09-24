@@ -1,5 +1,7 @@
 <?php
 
+// Endpoint http://localhost/Prestamo/servicio/server.php
+//WSDL Http://localhost/Prestamo/servicio/server.php?wsdl
 
 // Se cargan las dependencias de Composer
 require_once __DIR__.'/../vendor/autoload.php';
@@ -13,7 +15,6 @@ require_once __DIR__.'/../services/PrestamoService.php';
 // Se crea el servidor SOAP y se configura el WSDL
 $server = new soap_server();
 $server->configureWSDL('PrestamoEquipos', 'urn:PrestamoEquipos');
-$server->wsdl->schemaTargetNamespace = 'urn:PrestamoEquipos';
 
 // Se define un tipo de dato complejo "Respuesta" para el WSDL
 $server->wsdl->addComplexType(
