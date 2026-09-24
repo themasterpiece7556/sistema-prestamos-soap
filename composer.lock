@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "8e990d3a58dc0e50da9d52d59f3a5272",
+=======
+    "content-hash": "96929801660d81244f5ed1f1f92055cc",
+>>>>>>> 4aeddd56c171b86cb07c64082ff6ee02708d0c56
     "packages": [
         {
             "name": "econea/nusoap",

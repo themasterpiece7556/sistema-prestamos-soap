@@ -4,8 +4,35 @@
 
 namespace Composer\Autoload;
 
+<<<<<<< HEAD
 class ComposerStaticIniteb1cb48756c55b310326a381e978bb84
 {
+=======
+class ComposerStaticInit96929801660d81244f5ed1f1f92055cc
+{
+    public static $prefixLengthsPsr4 = array (
+        'C' =>
+        array (
+            'Config\\' => 7,
+        ),
+        'A' =>
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Config\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
+        'App\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
+>>>>>>> 4aeddd56c171b86cb07c64082ff6ee02708d0c56
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'XMLSchema' => __DIR__ . '/..' . '/econea/nusoap/src/nusoap.php',
@@ -33,7 +60,13 @@ class ComposerStaticIniteb1cb48756c55b310326a381e978bb84
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+<<<<<<< HEAD
             $loader->classMap = ComposerStaticIniteb1cb48756c55b310326a381e978bb84::$classMap;
+=======
+            $loader->prefixLengthsPsr4 = ComposerStaticInit96929801660d81244f5ed1f1f92055cc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit96929801660d81244f5ed1f1f92055cc::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit96929801660d81244f5ed1f1f92055cc::$classMap;
+>>>>>>> 4aeddd56c171b86cb07c64082ff6ee02708d0c56
 
         }, null, ClassLoader::class);
     }

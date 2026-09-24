@@ -6,4 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+<<<<<<< HEAD
+=======
+    'Config\\' => array($baseDir . '/config'),
+    'App\\' => array($baseDir . '/src'),
+>>>>>>> 4aeddd56c171b86cb07c64082ff6ee02708d0c56
 );
